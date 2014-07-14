@@ -1,4 +1,4 @@
-class osx_management::locationbase_printer_installs {
+class osx_management::locationbase_printer_installs inherits params {
 	case $::operatingsystem{
 		Darwin:{
 		##San Jose LEADPS is on the 10.3.0.0 and 10.3.0.0 Subnets

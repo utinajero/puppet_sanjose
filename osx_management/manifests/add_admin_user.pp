@@ -1,4 +1,4 @@
-class osx_management::add_admin_user {
+class osx_management::add_admin_user inherits params {
 ## this class only manages 10.9 
   case $macosx_productversion_major{
     10.9:{    
