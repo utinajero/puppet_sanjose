@@ -1,5 +1,6 @@
 class osx_management::params {
 
+  #local admin user 
   $macadmin = 'admin'
   $ensure   = 'present'
   $comment  = 'Administrator'
@@ -18,4 +19,11 @@ class osx_management::params {
     $password   = hiera('password_ml')
     $salt       = hiera('salt_ml') 
   }
+  
+  # printers 
+  $sj_lan                = hiera('sj_lan')
+  $sj_uri_staff_printer  = hiera('sj_uri_staff_printer')
+  $sj_uri_office_printer = hiera('sj_uri_office_printer')
+  $hy_lan                = hiera('hy_lan')
+  $hy_uri_office_printer = hiera('hy_uri_office_printer')
 }
