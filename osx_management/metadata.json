@@ -1,0 +1,67 @@
+{
+  "description": "Module used to demonstrate various OS X management tasks with Puppet.",
+  "checksums": {
+    "README.markdown": "d6536ebc491ce367fc1d1999877de748",
+    "manifests/add_local_user.pp": "a9d03dc5e168603c0b00fc79369e10f8",
+    "manifests/add_admin_user.pp": "b2d1935a32d2b041fa408a1bcb2c0c67",
+    "tests/munki_repo.pp": "bdfe46d222f524dcd51bf4c52d28f905",
+    "tests/add_admin_user.pp": "e4fe5ae869b0a7b0a88eb3cc9e14ad22",
+    "manifests/munki_install.pp": "49eb3702b3aa7b07bc9369aae10b22df",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "Modulefile": "5f354ed9146917d9f5bac480aedf6b32",
+    "manifests/macauth_dvdregion.pp": "5f87c0ef82f197ba8cf5232059dfa2b8",
+    "lib/facter/munki_version.rb": "9d7e11f8518c28c77c7de020ad5fbaed",
+    "files/com.puppetlabs.mcollective.plist": "8b01c98bf5cbc86ef98414105365f651",
+    "tests/munki_install.pp": "2b5fb04b73ef78f2e7fe9c7803e6e224",
+    "manifests/mcollective.pp": "ff51b87b1c16e8ec075a924a67802443",
+    "files/plugins/agent/mcollective_agent_files_go_here": "d41d8cd98f00b204e9800998ecf8427e",
+    "tests/add_local_user.pp": "92fea094c0de850e2baf68bea2431236",
+    "templates/server.cfg.erb": "7e3f5e7daa0bb440b9d6cfc9397a747f",
+    "tests/macauth_dvdregion.pp": "00ca298580088e3f0561b31b1f7fc761",
+    "manifests/macauth_datetime.pp": "abbdb127c9b1df785301117a817644cb",
+    "manifests/install_printers.pp": "ab4927542e9e4ac673f45b3c4ed10c21",
+    "tests/macauth_printeraccess.pp": "2beba163ea5ee8c82b6e6d3649bc3506",
+    "tests/install_printers.pp": "f8385f90e899490e26191892b6981829",
+    "manifests/macauth_printeraccess.pp": "ec75b66b25436ea8b3f0aae2cc7cb6d9",
+    "files/Xerox_Phaser_8560MFP.ppd": "ea4c8a874fdf1e967236e84d49332c79",
+    "tests/macauth_sysprefs.pp": "0efdcdf1be96cf21b6e762aea23d0ac4",
+    "manifests/mcollective_plugins.pp": "ccc5ecd9689c5690f3133d2b1db0fd28",
+    "tests/macauth_datetime.pp": "f787cb82fa683d440944bf523e01a771",
+    "tests/firefox.pp": "02209c97dba6aceab8245d1530954026",
+    "manifests/munki_repo.pp": "6d4d36dea913618eb8b5fad7788a0338",
+    "manifests/macauth_sysprefs.pp": "26ac488138d723e1fcae27fc61a0be12",
+    "manifests/firefox.pp": "9fa5c41d3db8f935495ebd925c7d0356"
+  },
+  "summary": "Module for common OS X Management Tasks",
+  "dependencies": [
+    {
+      "name": "glarizza/pick",
+      "version_requirement": ">= 0.0.1"
+    },
+    {
+      "name": "glarizza/property_list_key",
+      "version_requirement": ">= 0.0.1"
+    },
+    {
+      "name": "mosen/cups",
+      "version_requirement": ">= 1.0.0"
+    },
+    {
+      "name": "puppetlabs/apache",
+      "version_requirement": ">= 0.4.0"
+    },
+    {
+      "name": "puppetlabs/vcsrepo",
+      "version_requirement": ">= 0.0.4"
+    }
+  ],
+  "author": "Chris Barker and Gary Larizza",
+  "version": "0.2.1",
+  "source": "http://forge.puppetlabs.com/glarizza/osx_management",
+  "types": [
+
+  ],
+  "license": "Apache License, Version 2.0",
+  "name": "glarizza-osx_management",
+  "project_page": "http://forge.puppetlabs.com/glarizza/osx_management"
+}
