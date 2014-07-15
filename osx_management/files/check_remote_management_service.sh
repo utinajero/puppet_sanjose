@@ -4,11 +4,11 @@ remote=$(launchctl list | grep '^\d.*RemoteDesktop.*' | grep -o com.apple.Remote
 
 ##change user to something you will be using 
 ## ie. vagrant,admin or admin or ladmin,admin or uname,uname,uname,uname...
-user='admin'
-ard=$(/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -configure -access -off && /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -users $user -privs -all -restart -agent -menu)
+# user='admin'
+# ard=$(/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -configure -access -off && /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -users $user -privs -all -restart -agent -menu)
 
 ## enable for all users 
-#ard=$(/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -restart -agent -privs -all)
+ard=$(/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -restart -agent -privs -all)
 
 ## Activate Remote Desktop Sharing, disable access privileges for all users:
 #ard=$(/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -off)
