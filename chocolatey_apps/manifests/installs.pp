@@ -5,11 +5,5 @@ class chocolatey_apps::installs inherits params {
       ensure   => $ensure,
       provider => $provider,
     }
-
-    # enable during game
-    # package { $windows_game_night: 
-    #   ensure   => $ensure,
-    #   provider => $provider,
-    # } 
   }
 }
