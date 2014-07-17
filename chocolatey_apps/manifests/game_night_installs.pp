@@ -5,11 +5,6 @@ class chocolatey_apps::game_night_installs inherits params {
       ensure   => $ensure,
       provider => $provider,
     }
-    
-    package { $win_pkgs:
-      ensure   => $ensure,
-      provider => $provider,
-    }
   }
 
 }
