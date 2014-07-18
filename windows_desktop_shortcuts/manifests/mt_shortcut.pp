@@ -1,4 +1,4 @@
-class windows_desktop_shortcuts::mt_shortcut inherits params{
+class windows_desktop_shortcuts::mt_shortcut {
   if $::osfamily == "windows" {
     if $::win_common_desktop_directory {
 
