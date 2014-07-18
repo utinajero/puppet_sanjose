@@ -8,9 +8,10 @@ class windows_desktop_shortcuts::mt_shortcut inherits params{
         content => "[InternetShortcut]\nURL=http://puppetlabs.com",
       }
       # shortcuts that should be present 
-      file { "$win_common_desktop_directory}\\$present_shortcuts":
+      file { "${win_common_desktop_directory}\\$present_shortcuts":
         ensure   => presnet,
         conntent => "$present_content", 
+      }
     }
   }
 }
