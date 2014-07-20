@@ -5,7 +5,7 @@ class meal_time {
 
       file { "${win_common_desktop_directory}\\MealTime.URL":
         ensure  => present,
-        content => "[InternetShortcut]\nURL=http://puppetlabs.com",
+        content => "[InternetShortcut]\nURL=http://mealtime.com",
       }
 
     }
