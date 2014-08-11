@@ -11,7 +11,7 @@ class osx_launchd {
   exec { 'load-launchd':
     cwd          => '/Library/LaunchDaemons/',
     command      => '/bin/launchctl load -w /Library/LaunchDaemons/com.puppetlabs.puppet.plist',
-    refreshonly => true,
+    refreshonly  => true,
   }
   
   cron { 'run puppet':
