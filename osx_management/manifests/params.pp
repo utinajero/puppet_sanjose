@@ -1,6 +1,6 @@
 class osx_management::params {
 
-  #local admin user 
+  #local admin account 
   $macadmin = 'admin'
   $ensure   = 'present'
   $comment  = 'Administrator'
@@ -24,6 +24,7 @@ class osx_management::params {
   $sj_lan                = hiera('sj_lan')
   $sj_uri_staff_printer  = hiera('sj_uri_staff_printer')
   $sj_uri_office_printer = hiera('sj_uri_office_printer')
+  $sj_uri_pclab_printer  = hiera('sj_uri_pclab_printer')
   $hy_lan                = hiera('hy_lan')
   $hy_uri_office_printer = hiera('hy_uri_office_printer')
 }

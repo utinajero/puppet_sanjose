@@ -17,6 +17,15 @@ class osx_management::locationbase_printer_installs inherits params {
           shared      => false,
           ppd         => "/Library/Printers/PPDs/Contents/Resources/RICOH Aficio MP 8000", # PPD file will be autorequired
         }
+        
+        printer { "SanJose_PCLab":
+          ensure      => present,
+          uri         => $sj_uri_pclab_printer,
+          description => "SanJose_PCLab",
+          shared      => false,
+          ppd         => "/Library/Printers/PPDs/Contents/Resources/Brother HL-6180DW series CUPS.gz",
+        }
+        
       }
       
     ##Hayward LEADPS is on the 10.5.0.0 Subnet
