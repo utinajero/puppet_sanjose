@@ -26,6 +26,14 @@ class osx_management::locationbase_printer_installs inherits params {
           ppd         => "/Library/Printers/PPDs/Contents/Resources/Brother HL-6180DW series CUPS.gz",
         }
         
+        printer { "SanJose_PCLab":
+          ensure      => present,
+          uri         => $sj_uri_student_services_printer,
+          description => "SanJose_Student_Services",
+          shared      => false,
+          ppd         => "/Library/Printers/PPDs/Contents/Resources/Brother HL-6180DW series CUPS.gz",
+        }
+        
       }
       
     ##Hayward LEADPS is on the 10.5.0.0 Subnet
