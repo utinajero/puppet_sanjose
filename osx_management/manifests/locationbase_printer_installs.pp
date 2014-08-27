@@ -26,7 +26,7 @@ class osx_management::locationbase_printer_installs inherits params {
           ppd         => "/Library/Printers/PPDs/Contents/Resources/Brother HL-6180DW series CUPS.gz",
         }
         
-        printer { "SanJose_PCLab":
+        printer { "SanJose_Student_Services":
           ensure      => present,
           uri         => $sj_uri_student_services_printer,
           description => "SanJose_Student_Services",
