@@ -8,14 +8,14 @@ class osx_management::locationbase_printer_installs inherits params {
           uri         => $sj_uri_staff_printer,
           description => "SanJose_StaffRoom_Copier",
           shared      => false,
-          ppd         => "/Library/Printers/PPDs/Contents/Resources/RICOH Aficio MP 8000", # PPD file will be autorequired
+          ppd         => "/Library/Printers/PPDs/Contents/Resources/RICOH Aficio MP 8000", # required
         }
         printer { "SanJose_Office":
           ensure      => present,
           uri         => $sj_uri_office_printer,
           description => "SanJose_Office_Copier",
           shared      => false,
-          ppd         => "/Library/Printers/PPDs/Contents/Resources/RICOH Aficio MP 8000", # PPD file will be autorequired
+          ppd         => "/Library/Printers/PPDs/Contents/Resources/RICOH Aficio MP 8000", # required
         }
         
         printer { "SanJose_PCLab":
@@ -43,7 +43,7 @@ class osx_management::locationbase_printer_installs inherits params {
           uri         => $hy_uri_office_printer,
           description => "Xerox 550",
           shared      => false,
-          ppd         => "/Library/Printers/PPDs/Contents/Resources/RICOH Aficio MP 7500", # PPD file will be autorequired
+          ppd         => "/Library/Printers/PPDs/Contents/Resources/RICOH Aficio MP 7500", # required
         }
       }
     }
