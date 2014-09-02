@@ -27,6 +27,7 @@ class osx_management::params {
   $sj_uri_pclab_printer  = hiera('sj_uri_pclab_printer')
   $sj_uri_art_printer    = hiera('sj_uri_art_printer')
   $sj_uri_student_services_printer = hiera('sj_uri_student_services_printer')
+  $sj_uri_principal_printer = hiera('sj_uri_principal_printer')
   $hy_lan                = hiera('hy_lan')
   $hy_uri_office_printer = hiera('hy_uri_office_printer')
 }
