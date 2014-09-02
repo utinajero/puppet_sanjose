@@ -27,7 +27,7 @@ class osx_management::locationbase_printer_installs inherits params {
         }
         
         printer { "SanJose_Student_Services":
-          ensure      => present,
+          ensure      => absent,
           uri         => $sj_uri_student_services_printer,
           description => "SanJose_Student_Services",
           shared      => false,
