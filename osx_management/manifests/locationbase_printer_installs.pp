@@ -1,7 +1,6 @@
 class osx_management::locationbase_printer_installs inherits params {
   case $::operatingsystem{
     Darwin:{
-    ##San Jose LEADPS is on the 10.3.0.0 and 10.3.0.0 Subnets
       if ($::network_en0 == $sj_lan) or ($::network_en1 == $sj_lan) {
         printer { "SanJose_StaffRoom":
           ensure      => present,
@@ -36,7 +35,7 @@ class osx_management::locationbase_printer_installs inherits params {
         
       }
       
-    ##Hayward LEADPS is on the 10.5.0.0 Subnet
+    ##Hayward LEADPS 
       if ($::network_en0 == $hy_lan) or ($::network_en1 == $hy_lan){
         printer { "Hayward_Office":
           ensure      => present,
