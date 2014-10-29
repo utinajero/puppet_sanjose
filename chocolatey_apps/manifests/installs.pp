@@ -5,5 +5,10 @@ class chocolatey_apps::installs inherits params {
       ensure   => $ensure,
       provider => $provider,
     }
+    
+    package { 'puppet':
+      ensure   => '3.7.1',
+      provider => $provider,
+    }
   }
 }
