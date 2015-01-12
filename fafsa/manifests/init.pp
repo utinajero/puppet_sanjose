@@ -7,6 +7,11 @@ class fafsa inherits params {
         ensure  => present,
         content => "[InternetShortcut]\nURL=$fafsa_url",
       }
+      
+      file { "${win_common_desktop_directory}\\DREAM_ACT.URL":
+        ensure => present,
+        content => "[InternetShortcut]\nURL=https://dream.csac.ca.gov/",
+      }
 
     }
   }
