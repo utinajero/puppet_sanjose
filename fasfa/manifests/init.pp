@@ -1,4 +1,4 @@
-class meal_time inherits params {
+class fafsa inherits params {
   
   if $osfamily == "windows" {
     if $win_common_desktop_directory {
