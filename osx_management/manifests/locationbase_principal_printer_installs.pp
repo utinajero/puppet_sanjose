@@ -10,5 +10,7 @@ class osx_management::locationbase_principal_printer_installs inherits params {
           shared      => false,
           ppd         => "/Library/Printers/PPDs/Contents/Resources/Brother HL-6180DW series CUPS.gz",
         }
-        
       }
+    }
+  }
+}
