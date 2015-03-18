@@ -1,14 +1,21 @@
 class chocolatey_apps::installs inherits params {
   
   if $::kernel == windows {
-    package { $win_pkgs:
+    package { "$win_pkgs":
       ensure   => $ensure,
       provider => $provider,
     }
     
-    # package { 'puppet':
-    #   ensure   => '3.7.2',
-    #   provider => $provider,
+    # file { 'install_chocolatey.bat':
+    #   path   => 'C:\install_cocolatey.bat',
+    #   ensure => present,
+    #   source => 'puppet:///modules/chocolatey_apps/files/install_chocolatey.bat',
+    # }
+    #
+    # exec { 'C:\install_cocolatey.bat':
+    #   onlyif => 'C:\install_cocolatey.bat',
+    #   require => File['install_chocolatey.bat'],
+    #   creates =>  "C:\puppet_installed_chocolatey.txt",
     # }
   }
 }
