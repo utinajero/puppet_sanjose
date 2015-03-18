@@ -4,6 +4,7 @@ class chocolatey_apps::installs inherits params {
     package { "$win_pkgs":
       ensure   => $ensure,
       provider => $provider,
+      #require => File['install_chocolatey.bat'],
     }
     
     # file { 'install_chocolatey.bat':
@@ -13,7 +14,7 @@ class chocolatey_apps::installs inherits params {
     # }
     #
     # exec { 'C:\install_cocolatey.bat':
-    #   onlyif => 'C:\install_cocolatey.bat',
+    #   onlyif  => 'C:\install_cocolatey.bat',
     #   require => File['install_chocolatey.bat'],
     #   creates =>  "C:\puppet_installed_chocolatey.txt",
     # }
