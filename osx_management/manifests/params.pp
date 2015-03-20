@@ -18,7 +18,13 @@ class osx_management::params {
     $iterations = hiera('iterations_ml')
     $password   = hiera('password_ml')
     $salt       = hiera('salt_ml') 
+  } elsif $::macosx_productversion_major == '10.10' {
+    $iterations = hiera('iterations_yosemite')
+    $password   = hiera('password_yosemite')
+    $salt       = hiera('salt_yosemite') 
   }
+    
+   
   
   # printers 
   $sj_lan                = hiera('sj_lan')

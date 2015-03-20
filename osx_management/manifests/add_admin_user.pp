@@ -1,6 +1,21 @@
 class osx_management::add_admin_user inherits params {
 ## this class only manages 10.9 
   case $macosx_productversion_major{
+    10.10:{    
+      user { $macadmin:
+        ensure     => $ensure, 
+        comment    => $comment,
+        gid        => $gid,
+        groups     => $groups,
+        home       => $home,
+        iterations => $iterations,
+        password   => $password,
+        salt       => $salt,
+        shell      => $shell,
+        uid        => $uid,
+        notify     => Exec['Hide sub-500 users']
+      }
+    
     10.9:{    
       user { $macadmin:
         ensure     => $ensure, 
