@@ -1,6 +1,6 @@
 class osx_management::params {
 
-  #local admin account 
+  #local admin account
   $macadmin = 'admin'
   $ensure   = 'present'
   $comment  = 'Administrator'
@@ -9,7 +9,7 @@ class osx_management::params {
   $home     = '/var/admin'
   $shell    = '/bin/bash'
   $uid      = '404'
-  
+
   if $::macosx_productversion_major == '10.9' {
     $iterations = hiera('iterations_mav')
     $salt       = hiera('salt_mav')
@@ -17,16 +17,20 @@ class osx_management::params {
   } elsif $::macosx_productversion_major == '10.8'{
     $iterations = hiera('iterations_ml')
     $password   = hiera('password_ml')
-    $salt       = hiera('salt_ml') 
+    $salt       = hiera('salt_ml')
   } elsif $::macosx_productversion_major == '10.10' {
     $iterations = hiera('iterations_yosemite')
     $password   = hiera('password_yosemite')
-    $salt       = hiera('salt_yosemite') 
+    $salt       = hiera('salt_yosemite')
+  } elsif $::macosx_productversion_major == '10.11' {
+    $iterations = hiera('iterations_capitan')
+    $password   = hiera('password_capitan')
+    $salt       = hiera('salt_capitan')
   }
-    
-   
-  
-  # printers 
+
+
+
+  # printers
   $sj_lan                = hiera('sj_lan')
   $sj_uri_staff_printer  = hiera('sj_uri_staff_printer')
   $sj_uri_office_printer = hiera('sj_uri_office_printer')
